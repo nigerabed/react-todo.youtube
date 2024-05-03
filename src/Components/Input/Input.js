@@ -1,6 +1,8 @@
-export default function Input(){
+
+export default function Input(props) {
+
 
     return (
-        <input type="text" placeholder="Add task here" />
+        <input value={props.inputValue} onChange={props.onChange} type="text" placeholder="Add task here" />
     )
 }
